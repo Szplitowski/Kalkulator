@@ -3,11 +3,10 @@ logging.basicConfig(level=logging.DEBUG)
 import math
 print(f"Wybierz działanie wpisując odpowiednią liczbę: \nDodawanie - wpisz 1 \nOdejmowanie  - wpisz 2 \nMnożenie - wpisz 3 \nDzielenie  - wpisz 4")
 typ = input("Wpisz tutaj:")
+
 if int(typ) > 4:
     print("error")
     exit()
-else:
-    pass
 if typ == "1":
   liczby = []
   n = int(input("Podaj ilość liczb, które chcesz dodać do siebie"))
@@ -18,8 +17,6 @@ if typ == "1":
     liczby.append(item)
   logging.info('Wynik tego dodawania to:' + str(sum(liczby)))
   exit()
-
-
 if typ == "3":
   liczby = []
   n = int(input("Podaj ilość liczb, które chcesz pomnożyć"))
@@ -31,7 +28,6 @@ if typ == "3":
   logging.info('Mnożę liczby:' + str(liczby))
   logging.info('Wynik tego mnożenia to:' + str(math.prod(liczby)))
   exit()
-
 
 a = input("Podaj a:")
 b = input("Podaj b:")
